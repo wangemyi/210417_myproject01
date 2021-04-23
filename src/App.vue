@@ -1,18 +1,27 @@
 <template>
-  <div id="app">
-    <router-view />
-    <FooterGuide></FooterGuide>
+ <div>
+      <Medo/>
+      <Youdo/>
+      <Hedo/>
+      <Show/>
   </div>
 </template>
 
 <script>
-import FooterGuide from "@/components/FooterGuide.vue";
-export default {
-  name: "App",
-  components: {
-    FooterGuide
+  import Youdo from './components/Youdo.vue'
+  import Medo from './components/Medo.vue'
+  import Hedo from './components/Hedo.vue'
+  import Show from './components/Show.vue'
+
+  export default {
+    components: {
+      Medo,
+      Youdo,
+      Hedo,
+      Show
+    }
   }
-};
 </script>
 
-<style></style>
+<style>
+</style>
